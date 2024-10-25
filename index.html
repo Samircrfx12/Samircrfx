@@ -20,7 +20,12 @@
             background-color: #0a0a0a; /* Darker container background */
             box-shadow: 0px 0px 15px 5px #00ffcc;
         }
-        h1 {
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .blinking-text {
+            animation: blink 1s infinite;
             color: #ffcc00; /* Yellowish neon color */
             text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffaa00;
         }
@@ -58,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>CRFX GROUP - VIP Forex Signals</h1>
+        <h1 class="blinking-text">CRFX GROUP - VIP Forex Signals</h1>
         <div class="support">
             <h2>پشتیبانی</h2>
             <p>ساعات کاری: 13:45 تا 17:45 و 21:00 تا 22:00 به وقت آلمان</p>
@@ -77,4 +82,4 @@
         </div>
     </div>
 </body>
-</html>
+                </html>
