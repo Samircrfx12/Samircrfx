@@ -23,7 +23,7 @@
         h1 {
             color: #ffd700;
             text-shadow: 0 0 10px #ffd700, 0 0 20px #ffaa00;
-            animation: flash 1s infinite;
+            animation: flash 2s infinite; /* Slowed down the flashing effect */
         }
         .support, .terms {
             background-color: #1a1a1a;
@@ -38,6 +38,7 @@
         }
         p {
             color: #cccccc;
+            margin: 10px 0; /* Added margin for better spacing */
         }
         .button {
             background-color: #ffd700;
@@ -55,12 +56,27 @@
         .button:hover {
             background-color: #ffcc00;
         }
+        .small-button {
+            background-color: #ffd700;
+            color: black;
+            padding: 5px 10px; /* Smaller padding for small button */
+            border: none;
+            border-radius: 5px;
+            font-size: 14px; /* Smaller font size */
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            box-shadow: 0 0 5px 2px #ffaa00; /* Smaller shadow */
+        }
+        .small-button:hover {
+            background-color: #ffcc00;
+        }
         @keyframes flash {
             0%, 100% {
                 opacity: 1;
             }
             50% {
-                opacity: 0.5;
+                opacity: 0.6; /* Slightly less opacity for a softer effect */
             }
         }
     </style>
@@ -77,10 +93,9 @@
             <h2>شرایط استفاده از سیگنال‌های VIP</h2>
             <p>1. ابتدا در بروکر OPO Finance اکانت ایجاد کنید.</p>
             <p>2. بعد از واریز وجه، کلاینت باید آیدی خود را به لینک زیر ارسال کند:</p>
-            <p>
-                <a href="https://t.me/Samircrfx_signal" style="color: #00ffcc;">https://t.me/Samircrfx_signal</a>
-            </p>
-            <a href="https://youtube.com/@samircrfxgroup?si=OBlXV7JiLuwvbwbR" class="button">برای آموزش‌های فارکس به این لینک مراجعه کنید</a>
+            <a href="https://t.me/Samircrfx_signal" class="small-button">ارسال آیدی</a>
+            <p>3. برای آموزش‌های بیشتر به لینک زیر مراجعه کنید:</p>
+            <a href="https://youtube.com/@samircrfxgroup?si=OBlXV7JiLuwvbwbR" class="small-button">آموزش‌های فارکس</a>
         </div>
     </div>
 </body>
